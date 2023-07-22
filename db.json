@@ -13,7 +13,13 @@
       "id": 3
     }
   ],
-  "comments": [],
+  "login": [
+    {
+      "email": "ikigai@ex.com",
+      "password": "ikigai2023",
+      "id": 1
+    }
+  ],
   "profile": {
     "name": "typicode"
   }
