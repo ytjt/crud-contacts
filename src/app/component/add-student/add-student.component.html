@@ -1,0 +1,75 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-5">
+      <div class="image">
+        <img
+          class="img-fluid"
+          src="https://salestack.in/admin/api/uploads/Product//1660628686Qz8l94Ic.png"
+        />
+      </div>
+    </div>
+    <!-- form -->
+
+    <div class="col-md-6">
+      <div class="card">
+        <h5>Add Student</h5>
+        <div class="row">
+          <form [formGroup]="contactform">
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1" class="form-label"
+                >Full Name</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Student's Fullname"
+                formControlName="fullname"
+              />
+            </div>
+
+            <div class="form-group mb-1">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                placeholder="Enter Student's Email"
+                formControlName="email"
+              />
+            </div>
+
+            <div class="form-group mb-3">
+              <label for="exampleInputEmail1" class="form-label"
+                >Matric Number</label
+              >
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter Student's Matric Number"
+                formControlName="matricnumber"
+              />
+            </div>
+
+            <div>
+              <button
+                type="submit"
+                (click)="submitContact(this.contactform.value)"
+                [disabled]="this.contactform.invalid"
+                class="btn btn-primary"
+              >
+                Submit</button
+              >&nbsp;&nbsp;
+              <button
+                type="submit"
+                class="btn btn-success"
+                n
+                routerLink="/student-list"
+              >
+                Back
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
