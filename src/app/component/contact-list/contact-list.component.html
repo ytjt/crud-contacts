@@ -38,8 +38,8 @@
             <td>{{ item.email }}</td>
             <td>{{ item.matricnumber }}</td>
             <td>
-              <i style="color: blue" class="fas fa-edit"></i> &nbsp;
-              <i style="color: red" class="fas fa-trash"></i>
+              <i style="color: blue" class="fas fa-edit" routerLink="/update-student/{{item.id}}"></i> &nbsp;
+              <i style="color: red" class="fas fa-trash" (click)="delete(item.id)"></i>
             </td>
           </tr>
         </tbody>

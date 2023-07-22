@@ -1,25 +1,19 @@
 {
   "posts": [
     {
-      "fullname": "Furqan",
-      "email": "furqan@graduate.utm.my",
-      "matricnumber": "A20EC5001",
-      "id": 1
+      "fullname": "Miza Nabilah",
+      "email": "miza@test.com",
+      "matricnumber": "A20EC5011",
+      "id": 2
     },
     {
-      "fullname": "Miza",
-      "email": "miza@test.com",
-      "matricnumber": "A20EC5010",
-      "id": 2
+      "fullname": "Furqan",
+      "email": "furqan@ex.com",
+      "matricnumber": "A20EC0001",
+      "id": 3
     }
   ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
+  "comments": [],
   "profile": {
     "name": "typicode"
   }

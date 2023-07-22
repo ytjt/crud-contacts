@@ -8,7 +8,7 @@ import { contact } from '../contactmodel';
   styleUrls: ['./contact-list.component.css']
 })
 export class ContactListComponent implements OnInit{
-  data:undefined | contact[]
+  data: undefined | contact[]
   constructor(private api:ApiService){ }
   ngOnInit(): void {
     this.getcontact();
@@ -17,6 +17,13 @@ export class ContactListComponent implements OnInit{
   getcontact(){
     this.api.getcontact().subscribe(res=>{
       this.data=res;
+    })
+  }
+
+  delete(id:number){
+    this.api.deletecontact(id).subscribe(res=>{
+      alert("Student Delete Successfully!")
+      this.getcontact();
     })
   }
 
